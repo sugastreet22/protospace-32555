@@ -1,0 +1,19 @@
+<mxfile host="65bd71144e" modified="2020-12-09T02:44:20.898Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" version="13.10.0" etag="zeY6diyeGm9CiY6dK2Uf" type="embed">
+    <diagram id="uCktSQPCMdaDB151YiFy" name="ページ1">
+        <mxGraphModel dx="824" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="120" width="320" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="120" width="320" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="440" width="360" height="230" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
