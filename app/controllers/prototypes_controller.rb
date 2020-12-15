@@ -22,13 +22,17 @@ class PrototypesController < ApplicationController
   end
 
   def edit
-
+    @prototype = Prototype.find(params[:id])
   end
 
   def update
-
+    if current_user.update(prototype_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
-  
+
   private
   def prototype_params
     params.require(:prototype).permit(:title, :catch_copy, :concept, :image).merge(user_id: current_user.id)
