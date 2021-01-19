@@ -1,5 +1,12 @@
 <main class="main">
   <div class="inner">
+
+  <div class='title-contents'>
+    <div>
+      <%= image_tag "coffee22.jpg", alt: "coffee-icon", id: "assets", class: "coffee" %>
+    </div>
+  </div>
+
     <%# ログインしているときは以下を表示する %>
     <% if user_signed_in? %>
       <div class="greeting">

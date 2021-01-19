@@ -1,25 +1,80 @@
-# ProtoSpaceのER図
+# アプリケーション名
+
+TOPRO
+
+TOPROは東京とプログラミングを組み合わせた造語です。
+
+# アプリケーション概要
+
+TOPROでは東京で集中して学習できる場所を共有するアプリです。プログラミングを学習する際に必須な電源、Wi-Fiがある場所を効率的に探すことができます。
+
+# URL
+
+
+
+# テスト用アカウント
+
+メールアドレス:aaaa@gmail.com
+パスワード:111aaa
+
+# 利用方法
+
+新規登録をしてもらい、メールアドレス、パスワード、ユーザー名、プロフィールを入力してもらいます。そのあと右上にある投稿するのボタンを押していただき、プログラミングが集中して勉強ができる場所の名称、おすすめポイント、電源があるか、Wi-Fiがあるか、アクセスを入力して、画像を選択して投稿するのボタンを押していただきます。投稿するとトップページには場所の画像とおすすめポイントが表示されます。画像をクリックすると学習できる場所の詳細を見ることができます。ログインのユーザーは削除と編集もできるのでおすすめポイントなどを修正したいときは変えることができます。コメント機能もあるので他のユーザーとその場所について共有することができます。
+
+# 目指した課題解決
+
+プログラミングを家で集中して勉強できない人に、外で集中して学習ができる環境を共有できます。
+
+# 洗い出した要件
+
+| 機能 | 目的 | 詳細 | ストーリー（ユースケース） |
+|  ---  |  ---  |  ---  |  ---  |
+| 投稿機能 | 共有したい場所を投稿する | 電源やWi-Fiなどプログラミングする際に必須の条件を記入する | 投稿する場所は必ず全て埋めることが条件 |
+| 編集削除機能 | 新たにおすすめポイントが見つかった際に更新が可能 | 自分が投稿した場所の編集と削除ができる | マイページに遷移すると編集と削除ボタンがあること<br>他のユーザーが詳細ページにいくと削除と編集ボタンがないこと |
+| コメント機能 | 他のユーザーと共有することが可能 | 他のユーザーの投稿にコメントができる | 誰が投稿したかわかるように後ろにユーザー名を表示する |
+
+#　実装した機能についてのGIFと説明	実装した機能について、それぞれどのような特徴があるのか列挙しましょう。GIFを添えることで、イメージがしやすくなります。
+
+
+# データベース設計	TOPROのER図
 
 ## users テーブル
-
-| email (string型,NOT NULL)          | 
-| password (string型,NOT NULL)       | 
-| name (string型,NOT NULL)           | 
-| profile (text型,NOT NULL)          |
-| occupation (text型,NOT NULL)       | 
-| position (text型,NOT NULL)         | 
+| Column       | Type          | Options           |
+| --------     | ------        | -----------       |
+| email        | string        | null: false       |
+| password     | string        | null: false       |
+| name         | string        | null: false       |
+| profile      | text          | null: false       |
 
 
 ## prototypes テーブル
-
-| title (string型,NOT NULL)          | 
-| catch_copy (text型,NOT NULL)       | 
-| concept (text型,NOT NULL)          |
-| image (ActiveStorage型,NOT NULL)   | 
-| user (references型,NOT NULL)       |
+| Column       | Type          | Options           |
+| --------     | ------        | -----------       |
+| title        | string        | null: false       |
+| catch_copy   | text          | null: false       |
+| consent      | text          | null: false       |
+| net          | text          | null: false       |
+| access       | text          | null: false       |
+| image        | ActiveStorage | null: false       |
+| user         | references    | foreign_key: true |
 
 ## comments テーブル
+| Column       | Type          | Options            |
+| --------     | ------        | -----------        |
+| text         | text          | null: false        |
+| user         | reference     | foreign_key: true  |
+| prototype    | references    | foreign_key: true  |
 
-| text (text型,NOT NULL)             | 
-| user (references型,NOT NULL)       | 
-| prototype (references型,NOT NULL)  | 
+# ローカルでの動作方法	git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述しましょう。この時、アプリケーション開発に使用した環境を併記することを忘れないでください（パッケージやRubyのバージョンなど）。
+
+```bash
+git clone https://github.com/sugastreet22/protospace-32555.git
+cd protospace-32555
+```
+
+
+
+
+
+
+

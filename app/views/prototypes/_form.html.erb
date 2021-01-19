@@ -1,25 +1,35 @@
 <%= form_with model:@prototype, local: true do |f|%>
   <div class="field">
-    <%= f.label :title, "プロトタイプの名称" %><br />
+    <%= f.label :title, "場所の名称" %><br />
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= f.label :catch_copy, "キャッチコピー" %><br />
+    <%= f.label :catch_copy, "おすすめポイント" %><br />
     <%= f.text_area :catch_copy, class: :form__text %>
   </div>
 
   <div class="field">
-    <%= f.label :concept, "コンセプト" %><br />
-    <%= f.text_area :concept, class: :form__text %>
+    <%= f.label :consent, "電源" %><br />
+    <%= f.text_area :consent, class: :form__text %>
   </div>
 
   <div class="field">
-    <%= f.label :image, "プロトタイプの画像" %><br />
+    <%= f.label :net, "Wi-Fi" %><br />
+    <%= f.text_area :net, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :access, "アクセス" %><br />
+    <%= f.text_area :access, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "場所の画像" %><br />
     <%= f.file_field :image %>
   </div>
 
   <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
+    <%= f.submit "投稿する", class: :form__btn  %>
   </div>
 <% end %>

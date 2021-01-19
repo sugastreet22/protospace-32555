@@ -4,7 +4,7 @@
       <p class="prototype__hedding">
         <%= @prototype.title%>
       </p> 
-      <%= link_to "by#{@prototype.user.name}", user_path(@prototype.user.id), class: :prototype__user %>
+      <%= link_to "by #{@prototype.user.name}", user_path(@prototype.user.id), class: :prototype__user %>
       <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <% if user_signed_in? && current_user.id == @prototype.user_id %>
       <div class="prototype__manage">
@@ -18,15 +18,27 @@
       </div>
       <div class="prototype__body">
         <div class="prototype__detail">
-          <p class="detail__title">キャッチコピー</p>
+          <p class="detail__title">おすすめポイント</p>
           <p class="detail__message">
             <%= @prototype.catch_copy %>
           </p>
         </div>
         <div class="prototype__detail">
-          <p class="detail__title">コンセプト</p>
+          <p class="detail__title">電源</p>
           <p class="detail__message">
-            <%= @prototype.concept %>
+            <%= @prototype.consent %>
+          </p>
+        </div>
+        <div class="prototype__detail">
+          <p class="detail__title">Wi-Fi</p>
+          <p class="detail__message">
+            <%= @prototype.net %>
+          </p>
+        </div>
+        <div class="prototype__detail">
+          <p class="detail__title">アクセス</p>
+          <p class="detail__message">
+            <%= @prototype.access %>
           </p>
         </div>
       </div>
@@ -50,7 +62,7 @@
                 <% @comments.each do |comment| %>
                   <li class="comments_list">
                     <%= comment.text %>
-                    <%= link_to @prototype.user.name, user_path(comment.user.id), class: :comment_user %>
+                    <%= link_to "（#{comment.user.name}）", user_path(comment.user), class: :comment_user %>
                   </li>
                 <% end %>
               <% end %>
