@@ -65,7 +65,7 @@ HTML　CSS
 MySQL SequelPro
 
 ## 本番環境
-heroku
+heroku S3
 
 ## ソース管理
 GitHub, GitHubDesktop
