@@ -43,7 +43,7 @@ https://protospace-32555.herokuapp.com/
 
 投稿機能
 https://gyazo.com/5c1ea020ce840cb5f7c89197be48729f
-
+![demo](https://gyazo.com/5c1ea020ce840cb5f7c89197be48729f/raw)
 編集機能
 https://gyazo.com/b055ec2fcc83ac4f4e7e16a60e793c22
 
