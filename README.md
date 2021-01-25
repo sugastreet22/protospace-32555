@@ -52,6 +52,10 @@ https://gyazo.com/2cfd61453e89e7e7f62faecb51a7512c
 
 コメント機能
 https://gyazo.com/8e5873eed7ecda421ab9c654b28d9db0
+https://i.gyazo.com/8e5873eed7ecda421ab9c654b28d9db0.gif
+
+# 工夫したポイント
+最初の画面でおすすめポイントが見ることができるので、気になるところをトップページを見るだけで判断できます。
 
 # 使用技術（開発環境）
 
