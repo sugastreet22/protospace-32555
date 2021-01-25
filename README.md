@@ -43,7 +43,7 @@ https://protospace-32555.herokuapp.com/
 
 投稿機能
 https://gyazo.com/5c1ea020ce840cb5f7c89197be48729f
-![demo](https://gyazo.com/5c1ea020ce840cb5f7c89197be48729f/raw)
+
 編集機能
 https://gyazo.com/b055ec2fcc83ac4f4e7e16a60e793c22
 
@@ -52,7 +52,7 @@ https://gyazo.com/2cfd61453e89e7e7f62faecb51a7512c
 
 コメント機能
 https://gyazo.com/8e5873eed7ecda421ab9c654b28d9db0
-https://i.gyazo.com/8e5873eed7ecda421ab9c654b28d9db0.gif
+
 
 # 工夫したポイント
 最初の画面でおすすめポイントが見ることができるので、気になるところをトップページを見るだけで判断できます。
